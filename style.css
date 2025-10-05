@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+/* Enable smooth scrolling for in-page navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Inter", "Segoe UI", system-ui, sans-serif;
