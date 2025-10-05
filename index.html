@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Primary layout container for the page -->
+    <div class="page-wrapper">
+        <header class="hero">
+            <nav class="top-nav">
+                <a class="brand" href="#top">Alex Doe</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content" id="top">
+                <h1>Alex Doe</h1>
+                <p>Software engineer crafting intuitive digital experiences.</p>
+                <a class="primary-btn" href="#projects">View Projects</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="card about" id="about">
+                <!-- Brief introduction that can be tailored later -->
+                <h2>About Me</h2>
+                <p>
+                    I am a software engineer who enjoys building reliable, human-centered products.
+                    My focus spans scalable web applications, interactive prototypes, and playful experiments.
+                </p>
+            </section>
+
+            <section class="card background" id="background">
+                <!-- Dedicated area for academic history -->
+                <h2>Academic Background</h2>
+                <ul class="timeline">
+                    <li>
+                        <h3>Master of Science in Computer Science</h3>
+                        <span class="timeline__meta">Tech University &bull; 2022</span>
+                        <p>Specialized in human-computer interaction and distributed systems.</p>
+                    </li>
+                    <li>
+                        <h3>Bachelor of Science in Software Engineering</h3>
+                        <span class="timeline__meta">Innovation College &bull; 2020</span>
+                        <p>Graduated with honors; led the open source club for two years.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card resume" id="resume">
+                <!-- Placeholder for resume download and highlights -->
+                <h2>Resume</h2>
+                <p>
+                    Showcase detailed experience, impact metrics, and leadership roles with a downloadable resume.
+                </p>
+                <a class="secondary-btn" href="#" aria-label="Download Alex Doe's Resume">Download Resume (PDF)</a>
+            </section>
+
+            <section class="card languages" id="languages">
+                <!-- Grid for the technologies the engineer is comfortable with -->
+                <h2>Programming Languages</h2>
+                <div class="language-grid">
+                    <article class="language">
+                        <h3>JavaScript / TypeScript</h3>
+                        <p>SPA architecture, full-stack prototypes, and UI component systems.</p>
+                    </article>
+                    <article class="language">
+                        <h3>Python</h3>
+                        <p>Data automation, backend services, and ML-powered tooling.</p>
+                    </article>
+                    <article class="language">
+                        <h3>Rust</h3>
+                        <p>Systems programming with a focus on performance and reliability.</p>
+                    </article>
+                    <article class="language">
+                        <h3>Go</h3>
+                        <p>Cloud-native APIs, concurrency workflows, and deployment tooling.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="card projects" id="projects">
+                <!-- Spotlight for the itch.io profile and featured project -->
+                <h2>Itch.io Highlights</h2>
+                <p>
+                    Explore experiments, game jams, and interactive toys hosted on my itch.io profile.
+                </p>
+                <a class="secondary-btn" href="https://itch.io" target="_blank" rel="noopener">Visit My Itch.io Page</a>
+                <div class="project-showcase">
+                    <article class="project">
+                        <h3>Featured Project</h3>
+                        <p>
+                            A narrative-driven puzzle adventure created for Global Game Jam. Integrates procedural
+                            storytelling with hand-crafted art.
+                        </p>
+                    </article>
+                    <article class="project">
+                        <h3>Prototype Sandbox</h3>
+                        <p>
+                            Collection of gameplay prototypes demonstrating unique mechanics and rapid iteration.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <!-- Minimal footer to surface quick contact links -->
+            <p>&copy; <span id="year"></span> Alex Doe. Crafted with curiosity and care.</p>
+            <div class="footer-links">
+                <a href="mailto:hello@example.com">hello@example.com</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Update the year in the footer so the site stays fresh.
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
