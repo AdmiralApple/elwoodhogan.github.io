@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Primary site container keeps the layout centered and readable -->
+    <div class="page">
+        <header class="hero">
+            <div class="hero__content">
+                <p class="hero__eyebrow">Software Engineer Portfolio</p>
+                <h1 class="hero__title">Your Name Here</h1>
+                <p class="hero__subtitle">Crafting thoughtful software with a focus on delightful user experiences and reliable systems.</p>
+                <a class="button" href="#contact">Get in touch</a>
+            </div>
+            <div class="hero__image" aria-hidden="true"></div>
+        </header>
+
+        <main>
+            <!-- Overview cards give quick access to key portfolio sections -->
+            <section class="cards" aria-label="Quick portfolio overview">
+                <article class="card">
+                    <h2>Academic Background</h2>
+                    <p>Add a short overview of your studies, degrees, and notable academic achievements.</p>
+                    <a class="card__link" href="#academic">See details</a>
+                </article>
+                <article class="card">
+                    <h2>Resume</h2>
+                    <p>Provide a link to download your resume or describe recent roles and responsibilities.</p>
+                    <a class="card__link" href="#resume">View resume</a>
+                </article>
+                <article class="card">
+                    <h2>Itch.io Projects</h2>
+                    <p>Showcase prototypes, jam submissions, or shipped games hosted on your Itch.io page.</p>
+                    <a class="card__link" href="#itch">Explore games</a>
+                </article>
+                <article class="card">
+                    <h2>Language Knowledge</h2>
+                    <p>Highlight your strongest programming languages and the ecosystems you thrive in.</p>
+                    <a class="card__link" href="#languages">Review skills</a>
+                </article>
+            </section>
+
+            <!-- Detailed sections expand on each portfolio pillar -->
+            <section class="section" id="academic">
+                <div class="section__header">
+                    <h2>Academic Background</h2>
+                    <p>Outline the formal training and academic experiences that shaped your engineering approach.</p>
+                </div>
+                <div class="section__content">
+                    <ul>
+                        <li><strong>Institution:</strong> University Name — Degree Title, Graduation Year</li>
+                        <li><strong>Highlights:</strong> Research focus, capstone project, honors, scholarships</li>
+                        <li><strong>Coursework:</strong> Algorithms, Distributed Systems, Human-Computer Interaction</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section" id="resume">
+                <div class="section__header">
+                    <h2>Resume</h2>
+                    <p>Link to your most recent resume and summarize your industry experience.</p>
+                </div>
+                <div class="section__content resume">
+                    <a class="button button--secondary" href="documents/YourName_Resume.pdf">Download Resume</a>
+                    <div class="timeline">
+                        <article class="timeline__item">
+                            <h3>Senior Software Engineer — Company Name</h3>
+                            <p class="timeline__period">2022 – Present</p>
+                            <p>Lead cross-functional initiatives, mentor engineers, and deliver resilient cloud-native services.</p>
+                        </article>
+                        <article class="timeline__item">
+                            <h3>Software Engineer — Company Name</h3>
+                            <p class="timeline__period">2019 – 2022</p>
+                            <p>Built data-intensive backend features and collaborated with designers to refine the user journey.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="itch">
+                <div class="section__header">
+                    <h2>Itch.io Page</h2>
+                    <p>Introduce players to your creative coding projects and share what makes them special.</p>
+                </div>
+                <div class="section__content">
+                    <p>Embed a curated selection of games or simply direct visitors to your Itch.io storefront.</p>
+                    <a class="button" href="https://itch.io/profile/yourusername" target="_blank" rel="noopener">Visit Itch.io</a>
+                </div>
+            </section>
+
+            <section class="section" id="languages">
+                <div class="section__header">
+                    <h2>Language Knowledge</h2>
+                    <p>Share your preferred programming languages, frameworks, and notable accomplishments.</p>
+                </div>
+                <div class="section__content">
+                    <div class="skills">
+                        <article class="skills__group">
+                            <h3>Core Languages</h3>
+                            <ul>
+                                <li>TypeScript / JavaScript</li>
+                                <li>Python</li>
+                                <li>Go</li>
+                                <li>Rust</li>
+                            </ul>
+                        </article>
+                        <article class="skills__group">
+                            <h3>Frameworks &amp; Tools</h3>
+                            <ul>
+                                <li>React, Svelte, Astro</li>
+                                <li>Node.js, FastAPI, gRPC</li>
+                                <li>PostgreSQL, Redis, MongoDB</li>
+                                <li>AWS, Terraform, Docker</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contact">
+            <div class="footer__content">
+                <p>Ready to collaborate on your next project?</p>
+                <a class="button button--secondary" href="mailto:you@example.com">Contact Me</a>
+            </div>
+            <p class="footer__note">© <span id="year"></span> Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Keep the copyright year current without manual updates.
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
