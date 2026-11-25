@@ -80,21 +80,13 @@ body::-webkit-scrollbar-thumb:hover {
 .top-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* Links sit on the right; the hero h1 below carries the name. */
+    justify-content: flex-end;
     gap: 1rem;
     max-width: var(--max-width);
     margin: 0 auto 3rem;
     border-bottom: 2px solid var(--line);
     padding-bottom: 1rem;
-}
-
-.brand {
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text);
-    text-decoration: none;
 }
 
 .nav-links {
@@ -336,7 +328,8 @@ main {
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 0.75rem 2rem;
     margin-top: 1.25rem;
 }
 
